@@ -32,7 +32,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.pythoneda-shared-pythonlang-banner.follows =
         "pythoneda-shared-pythonlang-banner";
-      url = "github:pythoneda-shared-pythonlang-def/domain/0.0.104";
+      url = "github:pythoneda-shared-pythonlang-def/domain/0.0.105";
     };
     pythoneda-shared-pythonlang-infrastructure = {
       inputs.flake-utils.follows = "flake-utils";
@@ -41,7 +41,7 @@
         "pythoneda-shared-pythonlang-banner";
       inputs.pythoneda-shared-pythonlang-domain.follows =
         "pythoneda-shared-pythonlang-domain";
-      url = "github:pythoneda-shared-pythonlang-def/infrastructure/0.0.80";
+      url = "github:pythoneda-shared-pythonlang-def/infrastructure/0.0.81";
     };
     pythoneda-shared-iac-events = {
       inputs.flake-utils.follows = "flake-utils";
@@ -50,7 +50,7 @@
         "pythoneda-shared-pythonlang-banner";
       inputs.pythoneda-shared-pythonlang-domain.follows =
         "pythoneda-shared-pythonlang-domain";
-      url = "github:pythoneda-shared-iac-def/events/0.0.16";
+      url = "github:pythoneda-shared-iac-def/events/0.0.17";
     };
   };
   outputs = inputs:
@@ -59,8 +59,8 @@
       let
         org = "pythoneda-shared-iac";
         repo = "events-infrastructure";
-        version = "0.0.1";
-        sha256 = "1p5r5pkbv3ihrvi3grzm2xnqxd7ym935n9lm8ryq1zp43gir5m4m";
+        version = "0.0.2";
+        sha256 = "0agdncv6mjk0d472mnz1fzszg056dni4mxxkx3idj9fvx4bh1vlz";
         pname = "${org}-${repo}";
         pythonpackage = "pythoneda.shared.iac.events.infrastructure";
         package = builtins.replaceStrings [ "." ] [ "/" ] pythonpackage;
